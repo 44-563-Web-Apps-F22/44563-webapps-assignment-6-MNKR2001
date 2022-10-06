@@ -2,10 +2,15 @@
 <html>
 <head>
     <title>Vacationmood</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-
+    <div class="container p-3 my-3 bg-info text-white">
 <h1>Mandadi Nithin Kunal Reddy selects a vacation</h1>
 <h2>Getting input</h2>
 
@@ -23,6 +28,7 @@
     <input type="button" class="btn btn-warning" value="Select a vacation" onclick="selectVacation()">
 
 </form>
+
 <br>
 <form>
     <label for="place">Enter a city</label>
@@ -33,10 +39,8 @@
 
     <input type="button" class="btn btn-success" value="Update the vacation" onclick="updateVacation()">
 </form>
-
-
-
 <p id="result">This text will be replaced </p>
+</div>
 
 <script> 
 var my_vacation={};

@@ -2,44 +2,49 @@
 <html>
 <head>
     <title>Discount</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="container p-3 my-3 bg-primary text-white">
+    <div class="container p-3 my-3 bg-info text-white">
     <h1>Mandadi Nithin Kunal Reddy computes discount</h1>
     <h2>Getting input</h2>
-<div class="container">
 <form>
-   
+    <div class="btn-group">
     <label for="initialvalue">Enter base amount </label>
     <input type ="number" id="initialvalue" name="initialvalue" value=20> <br>
-    
-   
+    </div>
+    <div class="btn-group">
     <label for="offervalue">Enter the discount percentage</label>
     <input type ="number" id="offervalue" name="offervalue" value=10> <br>
-    
+    </div>
     <input type="button" class="btn btn-warning" onclick="discount()" value="Apply discount">
 </form>
 
 <p id="result">This text will be replaced </p>
-
 <br>
 <form>
+    <div class="btn-group">
     <input type="radio" id="initial" name="task" onclick="chooseOp()" value="times">
     <label for="initial">*</label> <br>
-    
-    <div class="form-group">
+    </div>
+    <div class="btn-group">
     <input type="radio" id="middle" name="task" onclick="chooseOp()" value="divide">
     <label for="middle">/</label> <br>
-   
-
+    </div>
+    <div class="btn-group">
     <input type="radio" id="final" name="task" onclick="chooseOp()" value="exponent">
     <label for="final">**</label> <br>
+    </div>
 </form>
 
 
 
 <p id="result2">This text will be replaced </p>
-
+</div>
 <script> 
 
 function discount()
