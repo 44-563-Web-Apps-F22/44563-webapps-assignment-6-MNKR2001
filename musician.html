@@ -14,7 +14,7 @@
     <div class="container p-3 my-3 bg-success">
 <h2>Musician guess by Nithin Kunal</h2>
 <h2>Getting input</h2>
-<form>"btn-group btn-group-justified"
+<form>
     <div class="form-group">
     <label for="Secretmusician">Enter the secret musician name</label>
     <input type ="password" id="SecretMusician" name="SecretMusician" min=10 max=50 step=2 value="John Lennon"> <br>
@@ -31,7 +31,6 @@
 
 <p id="result">This text will be replaced </p>
 <img src="Mosquito.jpg" class="img-circle" height="100px" width="100px" alt="Mosquito" id="pic" onclick="swapImage()">
-</div>
 <br>
 <script> 
 var useImage=1;
@@ -67,11 +66,16 @@ correct=0;
        else{
         wrong+=1
         alert("Wrong Musician")
+        if(wrong>=3)
+        {
+            alert("Sorry, game over.")
+        }
        }
         
         document.getElementById("result").innerHTML="correct guess: "+correct+"wrong guess: "+wrong
 }
 </script>
+    </div>
 
 </body>
 </html>
