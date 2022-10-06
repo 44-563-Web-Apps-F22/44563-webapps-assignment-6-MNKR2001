@@ -2,25 +2,26 @@
 <html>
 <head>
     <title>Discount</title>
-  
 </head>
 <body>
-<h1>Mandadi Nithin Kunal Reddy computes discount</h1>
-<h2>Getting input</h2>
-
+<div class="container p-3 my-3 bg-primary text-white">
+    <h1>Mandadi Nithin Kunal Reddy computes discount</h1>
+    <h2>Getting input</h2>
+<div class="container">
 <form>
    
     <label for="initialvalue">Enter base amount </label>
     <input type ="number" id="initialvalue" name="initialvalue" value=20> <br>
-    </div>
+    
    
     <label for="offervalue">Enter the discount percentage</label>
     <input type ="number" id="offervalue" name="offervalue" value=10> <br>
-    </div>
+    
     <input type="button" class="btn btn-warning" onclick="discount()" value="Apply discount">
 </form>
 
 <p id="result">This text will be replaced </p>
+
 <br>
 <form>
     <input type="radio" id="initial" name="task" onclick="chooseOp()" value="times">
